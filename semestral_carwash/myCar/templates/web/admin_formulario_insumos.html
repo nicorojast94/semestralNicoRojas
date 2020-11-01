@@ -1,0 +1,58 @@
+{% extends "web/base.html" %}
+{%load static %}}
+
+{% block contenido%}
+<!-- Sector de contenido de la página -->
+<div class="formularios">
+    <h1>Formulario de Insumos</h1>
+        {% csrf_token %}
+        <script>
+            function eliminar(insumo){
+                var msg;
+                var opcion = confirm("Desea Eliminar el Producto? " + insumo +"")
+                if (opcion == true){
+                    location.href='eliminar_in/'+insumo+'/'
+                    msg = "Elimino";            
+                }
+                else{
+                    msg = "Cancelo";
+                    alert(msg);
+                }                
+            }
+            function actualizar(insumo){
+                location.href ='/buscar/' + insumo + '/';
+            }
+        </script>
+        <table border="3">
+            <tr>
+                <td>Nombre</td>
+                <td>Precio</td>
+                <td>Descripcion</td>
+                <td>Stock</td>
+                <td>Operaciones</td>
+            </tr>
+            {% for item in listar_insumos %}
+            
+            
+            <tr>
+                <td>{{item.nombre}}</td>
+                <td>{{item.precio}}</td>
+                <td>{{item.descripcion}}</td>
+                <td>{{item.stock}}</td>
+                <td>
+                    <input type="button" value="Eliminar" onclick="eliminar('{{item.nombre}}')">
+                    <input type="button" value="Actualizar" onclick="actualizar('{{item.nombre}}')">
+                    </td>
+            </tr>
+            {% endfor %}
+            
+        </table>
+    <script>
+        function ir (){
+            location.href='/formulario_insumos/'
+        }
+    </script>
+    <input type="button" value="Agregar Insumo" onclick="ir()">
+    {{msg}}
+</div>
+{% endblock contenido %}

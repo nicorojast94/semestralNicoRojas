@@ -1,0 +1,48 @@
+{% extends "web/base.html" %}
+{% load static %}
+
+{% block  contenido %}
+
+    <!-- Sector de contenido de la página -->
+    <div class="principal">
+      <H1>Galeria de Imagenes</H1>
+    </div>
+    <div class="container">
+
+      <ul class="slider">
+        {% for item in imagenes %}
+          <li id="{{item.ident}}"><img src="{{item.imagen.url}}"></li>
+        
+        {% endfor %}
+        
+      </ul>
+      <ul class="points_menu">
+        <li>
+          <a href="#galeria1"> </a>
+        </li>
+        <li>
+          <a href="#galeria2"> </a>
+        </li>
+        <li>
+          <a href="#galeria3"> </a>
+        </li>
+        <li>
+          <a href="#galeria4"> </a>
+        </li>
+        <li>
+          <a href="#galeria5"> </a>
+        </li>
+        <li>
+          <a href="#galeria6"> </a>
+        </li>
+      </ul>
+    </div>
+    <div class="push"></div>
+    <!-- Sector de contenido de la página -->
+
+
+{% endblock contenido %}
+    
+
+
+

@@ -1,0 +1,35 @@
+{% extends "web/base.html" %}
+{%load static%}
+{% block contenido %}
+<div class="formularios">
+    <h1>Formulario de Login</h1>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <table border="2">
+            <tr>
+                <td>Nombre Usuario:</td>
+                <td>
+                    <input type="text" id="txtNombreusuario" name="txtNombreusuario">
+                </td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <input type="password" id="txtPass1" name="txtPass1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+    <div style="text-align: center;color:black;">
+        <h2>{{msg}}</h2>
+    </div>
+</div>
+{% endblock contenido %}

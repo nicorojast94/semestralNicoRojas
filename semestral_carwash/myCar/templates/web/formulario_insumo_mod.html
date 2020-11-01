@@ -1,0 +1,55 @@
+{% extends "web/base.html" %}
+{%load static %}}
+
+{% block contenido%}
+<!-- Sector de contenido de la página -->
+<div class="formularios">
+    <h1>Formulario de Modificacion de Insumo</h1>
+
+
+    <form action="{% url 'MODIFICAR' %}" method="POST" onsubmit="return validarFormulario()">
+        {% csrf_token %}
+        <table border="3">
+            <tr>
+                <td>Nombre :</td>
+                <td>
+                    <input type="text" value="{{insumo.nombre}}"name="txtProducto" id="txtProducto" minlength="3" maxlength="120" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Precio :</td>
+                <td>
+                    <input type="number" value="{{insumo.precio}}" name="txtPrecio" id="txtPrecio" min="1" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Descripcion:</td>
+                <td>
+                    <input type="text" value="{{insumo.descripcion}}" name="txtDescripcion" id="txtDescripcion" >
+                </td>
+            </tr>
+                        <tr>
+                <td>Stock:</td>
+                <td>
+                    <input type="text" value="{{insumo.stock}}" name="txtStock" id="txtStock" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <script> 
+                        function ir(){
+                            location.href='/lista_insumos/';
+                        }
+                    </script>
+                    <input type="submit" value="Modificar">
+                    <input type="reset" value="Limpiar">
+                    <input type="button" onclick="ir()" value="Listado Insumos">
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+    {{msg}}
+</div>
+{% endblock contenido %}

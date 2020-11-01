@@ -1,0 +1,20 @@
+{% extends "web/base.html" %}
+{% block contenido %}
+<!-- Sector de contenido de la página -->
+    {% for item in lista %}
+            <div class ="mision">
+        <h1><b>Mision</b></h1>
+        <h4 class="descripcion">{{item.mision}}
+        </h4>
+    </div>
+
+    <div class="vision">
+        <h1><b>Vision</b></h1>
+        <h4 class="descripcion">{{item.vision}}
+        </h4>
+
+    
+    {% endfor %}
+
+    </div>
+{% endblock contenido %}

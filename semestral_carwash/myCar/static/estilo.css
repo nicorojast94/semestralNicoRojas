@@ -1,0 +1,334 @@
+/* resetear valores */ 
+
+*{
+
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+
+}
+/* cabecera */ 
+
+.logo_prin{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imagen_index{
+    background-image: url("img/lavado\ autos\ miguel\ index.jpg");
+
+}
+
+.header{
+    
+    padding: 60px;
+    text-align: center;
+    background:#37A9AB;
+    color:  aliceblue;
+}
+
+.navegarbar{
+    padding: 10px;
+    display:  flow-root;
+    background: #A0DDDE;
+    width:100%;
+
+
+
+}
+
+.navegarbar a{
+    color: #296061;
+    text-decoration: none;
+    padding: 10px 280px;
+    text-align: center;
+    width:100%;
+    
+}
+
+.index{
+    color: #296061;
+    text-decoration: none;
+    padding: 10px 280px;
+    text-align: center;
+}
+
+
+.navegarbar a:hover{
+    background-color: #008F62;
+    color: white;
+
+}
+
+/* contenido */ 
+
+.row{
+    background-color: #37A9AB;
+    flex: 70%;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.side{
+    flex: 30%;
+    background-color: #96D1E3;
+    padding: 20px;
+}
+
+.registro {
+    display: inline-block;
+    padding: 20px 15px;
+    background: #A0DDDE;
+    color: #005F61 !important;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    -webkit-border-bottom-right-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-bottomright: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+
+.principal{
+    flex: 70%;
+    background: #96E9E3;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+
+
+}
+
+.imgn1{
+    background-color: #A5D1E3;
+    width: 100%;
+    padding: 20px;
+    border: solid black;
+}
+/*formularios*/
+
+.formularios{
+    flex: auto;
+    background: #96E9E3;
+    padding: 20px;
+    
+    
+
+
+
+}
+/*mision y vision*/
+.mision{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #37A9AB;
+    width:100%;
+
+}
+
+.vision{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #37A9AB;
+    width:100%;
+
+
+}
+.descripcion{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #37A9AB;
+
+}
+
+/* IMAGENES */ 
+
+
+.imagenclientesfelices{
+    background-color: #A5D1E3;
+    width: 100%;
+    padding: 20px;
+    border: solid #005F61;
+    box-shadow: 5px 10px;
+}
+
+
+.imagendeltitulo{
+    background-color: #A5D1E3;
+    
+    width: 100px;
+    height: 100px;
+
+    
+}
+
+.imagensucursal{
+    background-color: #A5D1E3;
+    width: 100%;
+    padding: 20px;
+    border: solid #005F61;
+    box-shadow: 5px 10px;
+}
+
+/* Seccion de clientes felices */ 
+
+div.avatar {
+    /* cambia estos dos valores para definir el tamaño de tu círculo */
+    height: 100px;
+    width: 100px;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+  }
+
+/* footer */ 
+
+.push{
+    background-color: black;
+    height: 2px;
+
+}
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: gray;
+    height: 100%;
+} 
+
+
+
+.imagen
+
+/* Galeria */ 
+
+.galeriatitulo{
+    background-color: aqua;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+
+}
+
+.galeriaclientefeliz{
+    background-image: url('img/102695102_3503956892967201_4366275501807272414_o.jpg');
+    padding: 220px;
+    width: 100%;
+    height: 200px;
+    border: solid #005F61;
+    box-shadow: 5px 10px;
+    margin: 45px;
+    float: left;
+}
+
+
+/* carrusel */
+  
+  .container{
+    margin: auto;
+    background-color: black;
+    width: 90%;
+    padding: 30px;
+  }
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 90%;
+    height: 300px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:black;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: center;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  .points_menu{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .points_menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .points_menu li a{
+    display: inline-block;
+    color: aqua;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
+
+
+  .galeria {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 3s;
+  }
+
+
+  .relleno{
+      background-color: aquamarine;
+  }

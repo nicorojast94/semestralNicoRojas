@@ -1,0 +1,61 @@
+{% extends "web/base.html" %}
+{%load static%}
+{% block contenido %}
+<div class="formularios">
+    <h1>Formulario de Registro</h1>
+    <script src="{% static 'Scripts/validaciones.js' static %}"></script>
+    <script src="{% static 'Scripts/cliente.js' %}"></script>
+
+    <form action="" method="POST" >
+        {% csrf_token %}
+        <table border="2">
+            <tr>
+                <td>Nombre :</td>
+                <td>
+                    <input type="text" id="txtNombre" name="txtNombre" minlength="3" maxlength="80" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Apellidos:</td>
+                <td>
+                    <input type="text" id="txtApellido" name="txtApellido" minlength="3" maxlength="80" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="email" id="txtEmail" name="txtEmail" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Nombre Usuario:</td>
+                <td>
+                    <input type="text" id="txtNombreusuario" name="txtNombreusuario" minlength="8" maxlength="80" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <input type="password" id="txtPass1" name="txtPass1" required minlength="8" maxlength="8">
+                </td>
+            </tr>
+            <tr>
+                <td>Repita su Password:</td>
+                <td>
+                    <input type="password" id="txtPass2" name="txtPass2" required minlength="8" maxlength="8">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+    <div style="text-align: center;color:black;">
+        <h2>{{msg}}</h2>
+    </div>
+</div>
+{% endblock contenido %}

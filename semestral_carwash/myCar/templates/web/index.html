@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<div class="relleno">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lavado de automóviles</title>
+        <link rel="stylesheet" href="{% static 'estilo.css' %}">
+    </head>
+
+    <body>
+        <!-- Cabecera pagina web -->
+        <div class="header logo_header">
+            <a class="logo_prin" href="Index.html"><img
+                    src="{% static 'archivos utiles/iconos-pack2/iconos-pack2/png/050-car-wash-6.png' %}" width="100"
+                    height="100"></a>
+            <a href="Index.html" class="index">
+                <h1> Lavado de autos M.G.L </h1>
+            </a>
+            <a href="registro.html" class="registro"> Registrate</a>
+            <p>¡Aquí encontrarás el mejor servicio de <b> Carwash </b>! </p>
+        </div>
+        <div class="push"></div>
+        <div class="navegarbar">
+
+            <a href="Index.html">Inicio </a>
+            <a href="mision_vision.html">Mision/vision </a>
+            <a href="ubicacion.html">Ubicacion</a>
+            <a href="galeria.html">Galeria </a>
+            <a href="formulario_insumos.html">Insumos </a>
+
+
+
+
+
+
+
+
+        </div>
+        <div class="push"></div>
+        <div class="container">
+            <ul class="slider">
+                <li id="slider1"> <img src="{%static 'img/slider1.jpg' %}"></li>
+                </li>
+                <li id="slider2"><img src="{%static 'img/slider2.jpg' %}"> </li>
+                <li id="slider3"> <img src="{%static 'img/slider3.jpg' %}"></li>
+                <li id="slider4"> <img src="{%static 'img/slider4.jpg' %}"></li>
+            </ul>
+            <ul class="points_menu">
+                <li>
+                    <a href="#slider1"> </a>
+                </li>
+                <li>
+                    <a href="#slider2"> </a>
+                </li>
+                <li>
+                    <a href="#slider3"> </a>
+                </li>
+                <li>
+                    <a href="#slider4"> </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Sector de contenido de la página -->
+
+
+</div>
+
+<div class="push"></div>
+<div class="principal">
+    <h1><b> M.G.L Servicios</b></h1>
+    <table>
+        <td>
+            <h2> ✬ Súper Lavado de Camioneta ✬ </h2>
+            <h4>Lavado y aspirado completo del vehiculo con renovador de neumaticos</h4>
+            <a class="logo_prin"><img src="{% static 'archivos utiles/iconos-pack2/iconos-pack2/png/038-minivan.png' %}"
+                    width="100" height="100" padding="100"> </a>
+
+        </td>
+
+
+
+        <td>
+            <h2> ✬ Súper Lavado de Auto ✬ </h2>
+            <h4>Lavado y aspirado completo del vehiculo con renovador de neumaticos</h4>
+            <a class="logo_prin"><img src="{% static 'archivos utiles/iconos-pack2/iconos-pack2/png/011-cost.png' %}"
+                    width="100" height="100"> </a>
+        </td>
+
+        <td>
+            <h2> ✬ Lavado de auto ✬ </h2>
+            <h4>Lavado del vehiculo con renovador de neumaticos</h4>
+            <a class="logo_prin"><img src="{% static 'archivos utiles/iconos-pack2/iconos-pack2/png/029-glass-cleaning.png' %}" width="100" height="100" > </a>
+        </td>
+
+        <td>
+        <h2> ✬ Lavado de Camioneta ✬ </h2>
+        <h4>Lavado del vehiculo con renovador de neumaticos</h4>
+        <a class="logo_prin" ><img src="{% static 'archivos utiles/iconos-pack2/iconos-pack2/png/055-suv.png' %}"
+            width="100" height="100"> </a>
+        </td>
+    </table>
+
+</div>
+
+
+<div class="push"></div>
+<div class="row">
+
+    <table>
+        <h1><b> Opiniones de Clientes </b></h1>
+        <td>
+            <div class="avatar" style="background-image: url({% static 'img/clientefeliz.jpg' %})"></div>
+            <h4><i>"Vehiculo impecable, lo traje despues de un finde semana en la playa y quedo como salido de
+                    concesionario ✬✬✬✬✬ "</i></h4>
+        </td>
+
+        <td>
+            <div class="avatar" style="background-image: url({% static 'img/clientefelizz2.jpg'%})"></div>
+            <h4><i>"Vehiculo impecable lujo de pocos jojo ✬✬✬✬✬ "</i></h4>
+        </td>
+
+        <td>
+            <div class="avatar" style="background-image: url({% static 'img/clientefelizzz3.jpg'%})"></div>
+            <h4><i>"Parecia un ferrarii como si no lo hubiera usado nadii ✬✬✬✬✬ "</i></h4>
+        </td>
+
+    </table>
+
+</div>
+
+
+
+</body>
+<!-- Footer -->
+
+<footer>
+    <div class="push"></div>
+    <div class="footer">
+        <h2>Sistema desarrollado por DWS </h2>
+
+        <p>Correo de contacto desarrollador <b> Nicolas Torrent </b> <a class="logo_prin"><img
+                    src="{% static 'archivos utiles/iconos-pack2/iconos-pack2/png/008-car-wash-1.png' %}" width="100"
+                    height="100"> </a></p>
+    </div>
+
+</footer>
+
+</div>
+
+</html>
